@@ -1,4 +1,5 @@
 "use client";
+import { Title } from "@/app/components/common/Title";
 import { OuterLink } from "@/app/components/novel/OuterLink";
 import { Recommend } from "@/app/components/novel/Recommend";
 import { TogetherNovelList } from "@/app/components/novel/TogetherNovelList";
@@ -10,7 +11,7 @@ export const Novel = ({ params }: { params: { id: string } }) => {
 
   return (
     <div>
-      <h1 className="text-[40px] mb-[20px] font-bold">Novel Page</h1>
+      <Title title="Novel Page" />
       <div className="flex gap-[8px]">
         <img src={novel?.image} alt={novel?.title} />
 

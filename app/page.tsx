@@ -4,12 +4,13 @@ import { NR } from "./components/NR";
 import { NRList } from "./components/NRList";
 import { Nav } from "./components/Nav";
 import { SearchForm } from "./components/SearchForm";
+import { Title } from "./components/common/Title";
 import { NOVEL_LIST } from "./const/const";
 
 export default function Home() {
   return (
     <div>
-      <h1 className="text-[40px] font-bold mb-[20px]">Main Page</h1>
+      <Title title="Main Page" />
       <Nav>
         <></>
       </Nav>

@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { Novel } from "../const/type";
 import { CommentButton } from "./CommentButton";
+import { ROUTE_URL } from "../const/urls";
 
 export const NR = ({ novel }: { novel: Novel }) => {
   const router = useRouter();
@@ -13,9 +14,20 @@ export const NR = ({ novel }: { novel: Novel }) => {
 
       <div className="w-full flex flex-col justify-between gap-[8px] p-[12px] text-[12px]">
         <div>
-          <h4 className="text-[16px] font-bold text-wrap text-[#222]">
-            {novel.title}
-          </h4>
+          <div className="flex justify-between items-center">
+            <h4 className="text-[16px] font-bold text-wrap text-[#222]">
+              {novel.title}
+            </h4>
+
+            <button
+              onClick={(e) => {
+                router.push(ROUTE_URL.review + `/${novel.id}/regist`);
+                e.stopPropagation();
+              }}
+            >
+              글 작성하기
+            </button>
+          </div>
           <span className="text-[#888] text-[12px]">{novel.writer}</span>
 
           <br />

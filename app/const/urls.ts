@@ -1,4 +1,4 @@
 export const ROUTE_URL = {
-  novel: "novel",
-  review: "review",
+  novel: "/novel",
+  review: "/review",
 };

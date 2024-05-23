@@ -79,6 +79,22 @@ export const NOVEL_LIST: Novel[] = [
         ],
       },
     ],
+    recommendNovelList: [
+      {
+        id: 2,
+        image:
+          "https://comicthumb-phinf.pstatic.net/20240226_168/pocket_1708924474058LGdlO_JPEG/503591.jpg?type=m260",
+        title: "아포칼립스에 집을 숨김",
+        writer: "정윤강",
+      },
+      {
+        id: 6,
+        image:
+          "https://comicthumb-phinf.pstatic.net/20240325_105/pocket_1711324984940TeArg_JPEG/%28%C3%D6%C1%BE%29_%C8%F7%BE%EE%B7%CE%B0%A1-%B5%B9%BE%C6%BF%D4%B4%D9.jpg?type=m260",
+        title: "히어로가 돌아왔다",
+        writer: "강히",
+      },
+    ],
   },
   {
     id: 2,
@@ -158,6 +174,15 @@ export const NOVEL_LIST: Novel[] = [
         ],
       },
     ],
+    recommendNovelList: [
+      {
+        id: 3,
+        image:
+          "https://comicthumb-phinf.pstatic.net/20230522_129/pocket_1684745007173F4l14_PNG/cover.png?type=m260",
+        title: "전지적 독자 시점",
+        writer: "싱송",
+      },
+    ],
   },
   {
     id: 3,
@@ -235,6 +260,15 @@ export const NOVEL_LIST: Novel[] = [
             hate: 5,
           },
         ],
+      },
+    ],
+    recommendNovelList: [
+      {
+        id: 1,
+        image:
+          "https://comicthumb-phinf.pstatic.net/20230427_30/pocket_1682567953252nPkOp_JPEG/gbabarians2.jpg?type=m260",
+        title: "게임속 바바리안으로 살아남기",
+        writer: "정윤강",
       },
     ],
   },

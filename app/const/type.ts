@@ -4,6 +4,7 @@ export type Novel = {
   title: string;
   writer: string;
   recommendList: Recommend[];
+  recommendNovelList: OnlyNovel[];
 };
 
 export type Recommend = {
@@ -24,3 +25,5 @@ export type Comment = {
   like: number;
   hate: number;
 };
+
+export type OnlyNovel = Omit<Novel, "recommendList" | "recommendNovelList">;
