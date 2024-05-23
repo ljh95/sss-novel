@@ -32,7 +32,7 @@ export const Novel = ({ params }: { params: { id: string } }) => {
       <div className="mt-[60px]">
         <h3 className="text-[20px] font-bold">베스트 추천글</h3>
         {recommendList.map((r) => (
-          <Recommend recommend={r} />
+          <Recommend recommend={r} key={r.id} />
         ))}
       </div>
 

@@ -1,4 +1,5 @@
-import Link from "next/link";
+"use client";
+
 import { NR } from "./components/NR";
 import { NRList } from "./components/NRList";
 import { Nav } from "./components/Nav";
@@ -10,9 +11,7 @@ export default function Home() {
     <div>
       <h1 className="text-[40px] font-bold mb-[20px]">Main Page</h1>
       <Nav>
-        <>
-          <Link href={"/novel"}>novel</Link>
-        </>
+        <></>
       </Nav>
       <SearchForm />
 
@@ -20,7 +19,7 @@ export default function Home() {
         <h2 className="font-bold text-[20px]">추천 목록</h2>
         <NRList>
           {NOVEL_LIST.map((novel) => {
-            return <NR novel={novel} />;
+            return <NR novel={novel} key={novel.id} />;
           })}
         </NRList>
       </main>

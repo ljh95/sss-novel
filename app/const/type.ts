@@ -7,6 +7,7 @@ export type Novel = {
 };
 
 export type Recommend = {
+  id: number;
   nickname: string;
   recommend: string;
   time: string;
@@ -16,6 +17,7 @@ export type Recommend = {
 };
 
 export type Comment = {
+  id: number;
   nickname: string;
   comment: string;
   time: string;

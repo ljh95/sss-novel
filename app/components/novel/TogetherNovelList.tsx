@@ -14,7 +14,7 @@ export const TogetherNovelList = ({
       <div className="flex gap-[20px]">
         {novelList.map((n) => {
           return (
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-between" key={n.title}>
               <img src={n.image} alt={n.title} />
               <p className="text-[14px]">{n.title}</p>
             </div>
